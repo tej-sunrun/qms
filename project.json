@@ -1,0 +1,70 @@
+{
+    "name": "manager",
+    "$schema": "../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "./src",
+    "projectType": "application",
+    "tags": [],
+    "targets": {
+      "build": {
+        "executor": "@nx/esbuild:esbuild",
+        "outputs": ["{options.outputPath}"],
+        "defaultConfiguration": "production",
+        "options": {
+          "platform": "node",
+          "outputPath": "dist/manager",
+          "format": ["esm"],
+          "bundle": false,
+          "main": "src/main.ts",
+          "tsConfig": "tsconfig.app.json",
+          "assets": ["src/assets"],
+          "generatePackageJson": true,
+          "esbuildOptions": {
+            "sourcemap": true,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        },
+        "configurations": {
+          "development": {
+            "esbuildOptions": {
+              "sourcemap": true,
+              "outExtension": {
+                ".js": ".js"
+              }
+            }
+          },
+          "production": {
+            "esbuildOptions": {
+              "sourcemap": false,
+              "outExtension": {
+                ".js": ".js"
+              }
+            }
+          }
+        }
+      },
+      "serve": {
+        "executor": "@nx/js:node",
+        "defaultConfiguration": "development",
+        "options": {
+          "buildTarget": "manager:build",
+          "runtimeArgs": ["--enable-source-maps"]        
+        },
+        "configurations": {
+          "development": {
+            "buildTarget": "manager:build:development",
+            "runtimeArgs": ["--enable-source-maps", "--nolazy"]
+          },
+          "production": {
+            "buildTarget": "manager:build:production"
+          }
+        }
+      },
+      "docker-build": {
+        "dependsOn": ["build"],
+        "command": "docker build -f manager/Dockerfile . -t manager"
+      }
+    }
+  }
+  

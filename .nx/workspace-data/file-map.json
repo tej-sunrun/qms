@@ -1,0 +1,460 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.5.6",
+  "deps": {
+    "@nrwl/tao": "19.5.6",
+    "@nx/express": "19.5.6",
+    "@nx/nx-darwin-arm64": "^19.5.6",
+    "@outofsync/object-key-cache": "^2.0.3",
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "connect-timeout": "^1.9.0",
+    "cors": "^2.8.5",
+    "date-fns": "^3.6.0",
+    "express": "~4.18.3",
+    "lodash.assign": "^4.2.0",
+    "lodash.flatten": "^4.4.0",
+    "lodash.omit": "^4.5.0",
+    "multer": "1.4.5-lts.1",
+    "redis": "^4.6.14",
+    "tslib": "^2.6.3",
+    "uuid": "^10.0.0",
+    "winston": "^3.13.1",
+    "@nx/esbuild": "19.5.6",
+    "@nx/eslint": "19.5.6",
+    "@nx/eslint-plugin": "19.5.6",
+    "@nx/jest": "19.5.6",
+    "@nx/js": "19.5.6",
+    "@nx/node": "19.5.6",
+    "@nx/workspace": "19.5.6",
+    "@swc-node/register": "~1.9.2",
+    "@swc/core": "~1.5.29",
+    "@swc/helpers": "~0.5.11",
+    "@types/express": "~4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "~18.16.20",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "esbuild": "^0.19.12",
+    "eslint": "~8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "jest": "^29.7.0",
+    "jest-environment-node": "^29.7.0",
+    "nx": "19.5.6",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.1.5",
+    "ts-node": "10.9.1",
+    "typescript": "5.5.4"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "manager": [
+        {
+          "file": ".nvmrc",
+          "hash": "14927194821612919746"
+        },
+        {
+          "file": ".nx/cache/nx_files.nxt",
+          "hash": "17590305484931818563"
+        },
+        {
+          "file": ".nx/workspace-data/d/server-process.json",
+          "hash": "1694854324270499871"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "14688272390704683536"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "16267754514737964994"
+        },
+        {
+          "file": "nx.json",
+          "hash": "12611717401343181719"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "4349780375006818517"
+        },
+        {
+          "file": "package.json",
+          "hash": "17736892628349409420",
+          "deps": [
+            "npm:@nx/esbuild",
+            "npm:@nx/eslint",
+            "npm:@nx/eslint-plugin",
+            "npm:@nx/jest",
+            "npm:@nx/js",
+            "npm:@nx/node",
+            "npm:@nx/workspace",
+            "npm:@swc-node/register",
+            "npm:@swc/core",
+            "npm:@swc/helpers",
+            "npm:@types/express",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:esbuild",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:jest",
+            "npm:jest-environment-node",
+            "npm:nx",
+            "npm:prettier",
+            "npm:ts-jest",
+            "npm:ts-node",
+            "npm:typescript",
+            "npm:@nrwl/tao",
+            "npm:@nx/express",
+            "npm:@nx/nx-darwin-arm64",
+            "npm:@outofsync/object-key-cache",
+            "npm:axios",
+            "npm:body-parser",
+            "npm:connect-timeout",
+            "npm:cors",
+            "npm:date-fns",
+            "npm:express",
+            "npm:lodash.assign",
+            "npm:lodash.flatten",
+            "npm:lodash.omit",
+            "npm:multer",
+            "npm:redis",
+            "npm:tslib",
+            "npm:uuid",
+            "npm:winston"
+          ]
+        },
+        {
+          "file": "project.json",
+          "hash": "11172167798293069478"
+        },
+        {
+          "file": "src/config/config.ts",
+          "hash": "3526370451421775889"
+        },
+        {
+          "file": "src/controllers/manager.ts",
+          "hash": "3659784245571667908"
+        },
+        {
+          "file": "src/lib/constants.ts",
+          "hash": "8908103475652526810"
+        },
+        {
+          "file": "src/lib/logger.ts",
+          "hash": "5766062966437424463",
+          "deps": [
+            "npm:winston",
+            "npm:lodash.assign"
+          ]
+        },
+        {
+          "file": "src/lib/request-handlers.ts",
+          "hash": "720494411972904294",
+          "deps": [
+            "npm:uuid",
+            "npm:date-fns",
+            "npm:lodash.omit"
+          ]
+        },
+        {
+          "file": "src/lib/request-timers.ts",
+          "hash": "1858644590788548147",
+          "deps": [
+            "npm:lodash.flatten"
+          ]
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "4746573226614228828"
+        },
+        {
+          "file": "src/manager.ts",
+          "hash": "17129105101198247204"
+        },
+        {
+          "file": "src/rate-limit.ts",
+          "hash": "17555925354101184984"
+        },
+        {
+          "file": "src/routes.ts",
+          "hash": "489917882641324331",
+          "deps": [
+            "npm:express"
+          ]
+        },
+        {
+          "file": "src/server.ts",
+          "hash": "7942496593023122509",
+          "deps": [
+            "npm:express",
+            "npm:connect-timeout",
+            "npm:cors",
+            "npm:multer",
+            "npm:body-parser"
+          ]
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "4422864898163174362"
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "11578899487645503869"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "897212990689128482"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "17001452778178005676"
+        },
+        {
+          "file": ".nx/workspace-data/jest-7930610538513362720.hash",
+          "hash": "1389868326933519382"
+        },
+        {
+          "file": ".nx/workspace-data/file-map.json",
+          "hash": "2091081065174394575"
+        },
+        {
+          "file": ".nx/workspace-data/parsed-lock-file.json",
+          "hash": "16157661811945834385"
+        },
+        {
+          "file": ".nx/workspace-data/eslint-4393011795395336301.hash",
+          "hash": "1389868326933519382"
+        },
+        {
+          "file": ".nx/workspace-data/lockfile.hash",
+          "hash": "14983858829266627219"
+        },
+        {
+          "file": ".nx/workspace-data/project-graph.json",
+          "hash": "628514803470872223"
+        },
+        {
+          "file": "dist/manager/package.json",
+          "hash": "15403573766010339011"
+        },
+        {
+          "file": "dist/manager/main.js",
+          "hash": "9584775743055762477"
+        },
+        {
+          "file": "dist/manager/rate-limit.js",
+          "hash": "5154782048394761079"
+        },
+        {
+          "file": "dist/manager/package-lock.json",
+          "hash": "7314962371423381599"
+        },
+        {
+          "file": "dist/manager/lib/logger.js.map",
+          "hash": "5622322808061732957"
+        },
+        {
+          "file": "dist/manager/server.js.map",
+          "hash": "14858384866113555047"
+        },
+        {
+          "file": "dist/manager/config/config.js.map",
+          "hash": "9580500538275357444"
+        },
+        {
+          "file": "dist/manager/server.js",
+          "hash": "7218331027690524738",
+          "deps": [
+            "npm:express",
+            "npm:cors",
+            "npm:multer",
+            "npm:body-parser"
+          ]
+        },
+        {
+          "file": "dist/manager/rate-limit.js.map",
+          "hash": "17231055207033149897"
+        },
+        {
+          "file": "dist/manager/controllers/manager.js.map",
+          "hash": "11675065225989150712"
+        },
+        {
+          "file": "dist/manager/config/config.js",
+          "hash": "7290285072288648948"
+        },
+        {
+          "file": "dist/manager/manager.js.map",
+          "hash": "7936758553683720826"
+        },
+        {
+          "file": "dist/manager/lib/request-timers.js.map",
+          "hash": "16605120322949342993"
+        },
+        {
+          "file": "dist/manager/lib/request-handlers.js",
+          "hash": "10098276491120129674",
+          "deps": [
+            "npm:uuid",
+            "npm:date-fns",
+            "npm:lodash.omit"
+          ]
+        },
+        {
+          "file": "dist/manager/lib/logger.js",
+          "hash": "7775112968344458314",
+          "deps": [
+            "npm:winston",
+            "npm:lodash.assign"
+          ]
+        },
+        {
+          "file": "dist/manager/lib/request-timers.js",
+          "hash": "13788365332969231497",
+          "deps": [
+            "npm:lodash.flatten"
+          ]
+        },
+        {
+          "file": "dist/manager/lib/request-handlers.js.map",
+          "hash": "920999691292107401"
+        },
+        {
+          "file": "dist/manager/lib/constants.js.map",
+          "hash": "10913409042945954420"
+        },
+        {
+          "file": "dist/manager/main.js.map",
+          "hash": "6506877130041922589"
+        },
+        {
+          "file": "dist/manager/routes.js.map",
+          "hash": "6662941983096279032"
+        },
+        {
+          "file": "dist/manager/lib/constants.js",
+          "hash": "14229383515351606288"
+        },
+        {
+          "file": "dist/manager/controllers/manager.js",
+          "hash": "17656056175985980433"
+        },
+        {
+          "file": "dist/manager/routes.js",
+          "hash": "16227642854972634476"
+        },
+        {
+          "file": "dist/manager/manager.js",
+          "hash": "9900572019983325791"
+        },
+        {
+          "file": ".nx/cache/.tsbuildinfo",
+          "hash": "14757375991562168954"
+        },
+        {
+          "file": "logs/error.log",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "logs/info.log",
+          "hash": "8677850353152592418"
+        },
+        {
+          "file": "logs/debug.log",
+          "hash": "4084371198957393158"
+        },
+        {
+          "file": ".git/hooks/pre-merge-commit.sample",
+          "hash": "5691533144974613569"
+        },
+        {
+          "file": ".git/hooks/fsmonitor-watchman.sample",
+          "hash": "5519580754951798083"
+        },
+        {
+          "file": ".git/hooks/prepare-commit-msg.sample",
+          "hash": "4009645067798984574"
+        },
+        {
+          "file": ".git/hooks/pre-commit.sample",
+          "hash": "2931916916104981897"
+        },
+        {
+          "file": ".git/hooks/pre-receive.sample",
+          "hash": "8999430056057037490"
+        },
+        {
+          "file": ".git/description",
+          "hash": "6589616779641096119"
+        },
+        {
+          "file": ".git/hooks/pre-push.sample",
+          "hash": "3666369642558647280"
+        },
+        {
+          "file": ".git/hooks/pre-rebase.sample",
+          "hash": "15784748353859782246"
+        },
+        {
+          "file": ".git/config",
+          "hash": "14656440403329541874"
+        },
+        {
+          "file": ".git/hooks/sendemail-validate.sample",
+          "hash": "7660090827690999586"
+        },
+        {
+          "file": ".git/hooks/applypatch-msg.sample",
+          "hash": "3740124940738663445"
+        },
+        {
+          "file": ".git/hooks/update.sample",
+          "hash": "14696759095365231402"
+        },
+        {
+          "file": ".git/hooks/push-to-checkout.sample",
+          "hash": "5194610557431485830"
+        },
+        {
+          "file": ".git/hooks/commit-msg.sample",
+          "hash": "11930680668000581900"
+        },
+        {
+          "file": ".git/HEAD",
+          "hash": "6460185820263248482"
+        },
+        {
+          "file": ".git/hooks/pre-applypatch.sample",
+          "hash": "1595391782482835178"
+        },
+        {
+          "file": ".git/hooks/post-update.sample",
+          "hash": "16498975149454253769"
+        },
+        {
+          "file": ".git/info/exclude",
+          "hash": "2084763735014985388"
+        }
+      ]
+    }
+  }
+}
